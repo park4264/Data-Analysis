@@ -13,7 +13,7 @@
 - 공부는 다음을 이용해 진행합니다.
 
 
-> 1. 데이터 분석 도서 [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
-> 2. Kaggle 필사
+> 1. 데이터 분석 도서 (Kaggle_1) [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
+> 2. Kaggle 필사 (Kaggle_2)
 
 
