@@ -9,7 +9,7 @@
 - 캐글(Kaggle)은 2010년 설립된 예측모델 및 분석 대회 플랫폼입니다.
 - 실제 데이터를 이용하여 바로 Kaggle Competition을 진행하기 전에 공부가 필요하다고 느꼈습니다.
 - 공부는 다음을 이용해 진행합니다.
-  1. 데이터 분석 도서 [[Github]](https://www.kaggle.com/](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
+  1. 데이터 분석 도서 [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
   2. Kaggle 필사
 
 
