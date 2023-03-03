@@ -2,7 +2,7 @@
 
 - 데이터 분석 역량 발전을 위한 공부를 합니다
 
-- 캐글 (Kaggle) 플랫폼을 이용합니다. [[Link]](https://www.kaggle.com/)
+- 캐글 (Kaggle) 플랫폼을 이용합니다. [[Kaggle Link]](https://www.kaggle.com/)
 
 # 캐글, Kaggle
 
@@ -12,6 +12,14 @@
   1. 데이터 분석 도서 [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
   2. Kaggle 필사
 
+## 1. 데이터 분석 도서
 
+
+
+
+
+
+
+## 2. Kaggle 필사
 
 
