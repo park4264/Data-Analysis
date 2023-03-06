@@ -14,6 +14,8 @@
 
 
 ### 1. 데이터 분석 도서 [(Kaggle_1)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_1) [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
+- 경진대회목록
+  - Bike Sharing Demand
 ### 2. Kaggle 필사 (Kaggle_2)
 
 
