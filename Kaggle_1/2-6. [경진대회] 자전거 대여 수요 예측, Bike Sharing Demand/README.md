@@ -19,7 +19,7 @@
 
 - 워싱턴 D.C의 자전거 무인 대여 시스템 과거 기록을 기반으로 향후 자전거 대여 수요를 예측하는 대회
 
-### 주어진 데이터
+### 0-1. 주어진 데이터
 - 2011년부터 2012년까지 2년간의 자전거 대여 데이터 
 - 캐피털 바이크셰어 회사가 공개한 운행 기록에 다양한 외부 소스에서 얻은 당시 날씨 정보를 조합하여 만들었음.
 
@@ -54,7 +54,7 @@
 
 
 
-### Evaluation
+### 0-2. Evaluation
 
 - 평가지표와 제출 형식
 - Submissions are evaluated one the **Root Mean Squared Logarithmic Error (RMSLE)**. The RMSLE is calculated as
