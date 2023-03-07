@@ -72,11 +72,35 @@ $$\sqrt{\dfrac{1}{N} \sum^n_{i=1} ( \log(p_i + 1) - \log(a_i + 1))^2}$$
     ```
     - 제출 형식은 일시(datetime)와 데여 수량(count)으로 구성되어 있음.
     
-## 1. 데이터 둘러보기
+## 1. 데이터 둘러보기📈📊
 - [[EDA python code]](https://github.com/park4264/Study-with-Kaggle/blob/main/Kaggle_1/2-6.%20%5B%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C%5D%20%EC%9E%90%EC%A0%84%EA%B1%B0%20%EB%8C%80%EC%97%AC%20%EC%88%98%EC%9A%94%20%EC%98%88%EC%B8%A1%2C%20Bike%20Sharing%20Demand/EDA.ipynb)
 
 
+### 분석 정리
 
+1. 타깃값 변환
+    - 분포도 확인 결과 타깃값인 `count`가 0 근처에 치우쳐 있어서 로그변환할 것
+    - 마지막에 다시 지수변환해야함
+2. 파생 피처 추가
+    - 
+
+3. 파생 피처 추가
+
+4. 피처 제거
+
+5. 피처 제거
+
+6. 피처 제거
+
+7. 피처 제거
+
+8. 피처 제거
+
+9. 피처 제거
+
+10. 이상치 제거
+
+11. 피처 제거
 
 
 
