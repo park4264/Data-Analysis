@@ -16,6 +16,9 @@
 ### 1. 데이터 분석 도서 [(Kaggle_1)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_1) [[Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
 - 경진대회목록
   - **Bike Sharing Demand** Score: 0.39595 / 상위 약 6%
-### 2. Kaggle 필사 (Kaggle_2)
+
+### 2. Kaggle 필사 [(Kaggle_2)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_2)
+- Competition 선정은 캐글코리아 이유한님의 커널커리큘럼을 참고했습니다. [[pdf]]()
+- 목록
 
 
