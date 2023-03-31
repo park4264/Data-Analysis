@@ -1,0 +1,142 @@
+# **Part II. 머신러닝 문제해결**
+
+
+
+
+
+
+
+
+# **Chapter 7. [경진대회] 범주형 데이터 이진분류**
+## Categorical Feature Encoding Challenge
+### Binary classification, with every feature a categorical
+
+![img](./img/2-6-1.png)
+
+- [Kaggle Link](https://www.kaggle.com/competitions/cat-in-the-dat)
+
+
+
+# 0. 경진대회 이해 💁🏻‍♂️
+
+- **Goal**: 범주형 피처 23개를 활용해 해당 데이터가 타깃값 1에 속할 확률을 예측하는 것.
+
+## 0-1. 특이점 세 가지
+
+1. 인위적으로 만든 데이터를 제공
+    - 대부분의 경진대회에서 제공하는 실제 데이터는 깔끔하게 정리되어 있지 않은 경우가 많아서, 연습용으로는 오히려 인공 데이터가 좋다.
+    
+
+
+2. 각 피처와 타깃값의 의미를 알 수 없다.
+    - 인위로 만들 때 데이터에 아무런 의미를 부여하지 않았기 때문
+    - 이런 경우 배경 지식을 활용하지 못함
+    - 이번 경진대회는 순전히 데이터만 보고 접근해야 함
+
+
+3. 제공되는 데이터는 모두 범주형
+    - 값이 두 개로만 구성된 데이터는 순서형 데이터(ordinal data), 명목형 데이터(nominal data), 날짜 데이터까지 다양
+    - `bin_`로 시작하는 피처는 이진 피처
+    - `nom_`로 시작하는 피처는 명목형 피처
+    - `ord_`로 시작하는 피처는 순서형 피처
+    - `day`와 `month`는 날짜 피처
+    - 또한, 순서형 피처 중 `ord_3`, `ord_4`, `ord_5`는 알파벳 순으로 고윳값 순서를 매김
+
+
+
+
+</br>
+
+- 타깃값도 범주형 데이터 `0, 1`
+- 타깃값이 두 가지이므로 본 경진대회는 이진분류 문제
+- 이 대회를 통해 범주형 데이터 인코딩 방법을 숙달할 수 있다.
+
+
+</br>
+
+> - 분류 문제에서는 주로 '1일 확률'을 예측 
+> - 타깃값 자체를 확실하게 예측하기에는 어렵기 때문에 확률로 예측
+> - 일반적으로 0은 음성, 1은 양성
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+### 0-2. Evaluation
+
+- 평가지표와 제출 형식
+- Submissions are evaluated one the **Root Mean Squared Logarithmic Error (RMSLE)**. The RMSLE is calculated as
+$$\sqrt{\dfrac{1}{N} \sum^n_{i=1} ( \log(p_i + 1) - \log(a_i + 1))^2}$$
+
+- **Submission Format**
+    - Your submission file must have a header and should be structured in the following format:
+    ```
+    datetime,count
+    2011-01-20 00:00:00,0
+    2011-01-20 01:00:00,0
+    2011-01-20 02:00:00,0
+    ...
+    ...
+    ```
+    - 제출 형식은 일시(datetime)와 데여 수량(count)으로 구성되어 있음.
+    
+## 1. 데이터 둘러보기📈📊
+- [[EDA Python Code]](https://github.com/park4264/Study-with-Kaggle/blob/main/Kaggle_1/2-6.%20%5B%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C%5D%20%EC%9E%90%EC%A0%84%EA%B1%B0%20%EB%8C%80%EC%97%AC%20%EC%88%98%EC%9A%94%20%EC%98%88%EC%B8%A1%2C%20Bike%20Sharing%20Demand/EDA.ipynb), [[Kaggle Notebook Code]](https://www.kaggle.com/code/park4264/bike-prediction-eda)
+
+### 분석 정리
+
+1. **타깃값 변환**
+    - 분포도 확인 결과 타깃값인 `count`가 0 근처에 치우쳐 있어서 로그변환할 것
+    - 마지막에 다시 지수변환해야함
+2. **파생 피처 추가**
+    - `datetime`피처를 분리해 `yaer`, `month`, `day`, `hour`, `minute`, `second` 피처를 생성할 수 있다.
+
+3. **파생 피처 추가**
+    - `datetime`에 숨어 있는 또 다른 정보인 요일 `weekday` 피처를 추가함
+
+4. **피처 제거**
+    - 테스트 데이터에 없는 피처는 의미가 없음
+    - 훈련 데이터에만 있는 `casual`과 `registered` 피처는 제거
+
+5. **피처 제거**
+    - `datetime`은 인덱스 역할만 하므로 타깃값 예측에 도움이 되지 않는다.
+
+6. **피처 제거**
+    -`date` 피처가 제공하는 정보는 `year`, `month`, `day` 피처에 담겨있다.
+
+7. **피처 제거**
+    - `month`는 `season`의 세부 피처이며 지나치게 세분화 할 경우 학습에 방해가될 수도 있다. 
+
+8. **피처 제거**
+    - 막대그래프 확인 결과 파생 피처인 `day`는 크게 분별력이 없다.
+
+9. **피처 제거**
+    - 막대그래프 확인 결과 파생 피처인 `munute`와 `second`에는 아무런 정보가 없다.
+
+10. **이상치 제거**
+    - 포인트 플롯 확인 결과 `weather`가 4인 데이터는 이상치
+
+11. **피처 제거**
+    - 산점도 그래프와 히트맵 확인 결과 `windspeed`피처에는 결측값이 많고 대여 수량과의 상관관계도 매우 약하다.
+
+
+
+
+### 모델링 전략
+- **베이스라인 모델**: 가장 기본적인 회귀 모델인 Linear Regression 채택
+- **성능 개선**: 릿지, 라쏘, 랜덤 포레스트 회귀 모델
+    - **피처 엔지니어링**: 앞의 분석 수준에서 모든 모델에서 동일하게 수행
+    - **하이퍼파라미터 최정화**: 그리드서치
+- **기타**: 타깃값이 `count`가 아닌 $\log$`count` 이다.
+
