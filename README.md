@@ -12,10 +12,14 @@
   - Kaggle에서 진행하는 데이터 분석의 메커니즘에 대한 이해가 필요합니다.
 - 공부는 다음을 이용해 진행합니다.
 
+</br>
 
 ### 1. 데이터 분석 도서 [(Kaggle_1)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_1) [[Book Github]](https://github.com/BaekKyunShin/musthave_mldl_problem_solving_strategy)
 - 🏆경진대회목록
-  - **Bike Sharing Demand** Score: 0.39595 / 상위 약 6%
+  - **Bike Sharing Demand** Private Score: 0.39595 / 상위 약 6%
+  - **Categorical Feature Encoding Challenge** Private Score: 0.80282 / 전체 2등
+
+</br>
 
 ### 2. Kaggle 필사 [(Kaggle_2)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_2)
 - Competition 선정은 캐글코리아 이유한님의 커널커리큘럼을 참고했습니다. [[pdf]](https://github.com/park4264/Study-with-Kaggle/blob/main/%EC%BB%A4%EB%84%90%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC.pdf) [[Blog Link]](https://kaggle-kr.tistory.com/32)
