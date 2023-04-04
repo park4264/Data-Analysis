@@ -8,12 +8,12 @@
 
 
 # **Chapter 8. [경진대회] 안전 운전자 예측 경진대회**
-### **Porto Seguro’s Safe Driver Prediction**
-### Predict if a driver will file an insurance claim next year.
+### **Predict Future Sales**
+### Final project for "How to win a data science competition" Coursera course
 
 ![img](./img/2-6-1.png)
 
-- [Kaggle Link](https://www.kaggle.com/competitions/porto-seguro-safe-driver-prediction)
+- [Kaggle Link](https://www.kaggle.com/competitions/competitive-data-science-predict-future-sales)
 
 
 </br>
@@ -22,18 +22,9 @@
 
 # 0. 경진대회 이해 💁🏻‍♂️
 
-- **Goal**: 운전자가 보험금을 청구할 확률을 정확히 예측하는 모델 제작
+- **Goal**: 과거 판매 데이터를 보고 향후 판매량을 예측
 
-## 0-1. 주어진 데이터 특정
 
-- 주어진 데이터는 포르투 세구로가 보유한 고객 데이터
-- 결측값이 많음
-    - 결측값은 `-1`로 기록
-
-- 타깃값은 `0` 또는 `1`
-    - `0`: 운전자가 보험금을 청구하지 않음
-    - `1`: 청구
-    - 타깃값이 두 개이므로 본 대회는 **이진분류 문제**
 
 </br>
 </br>
