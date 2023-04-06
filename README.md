@@ -18,7 +18,7 @@
 - 🏆경진대회목록
   - **Bike Sharing Demand** Private Score: 0.39595 / 상위 약 6%
   - **Categorical Feature Encoding Challenge** Private Score: 0.80282 / 전체 2등
-
+  - **Porto Seguro’s Safe Driver Prediction** 
 </br>
 
 ### 2. Kaggle 필사 [(Kaggle_2)](https://github.com/park4264/Study-with-Kaggle/tree/main/Kaggle_2)
