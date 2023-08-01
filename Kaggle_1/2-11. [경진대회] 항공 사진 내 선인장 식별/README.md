@@ -1,4 +1,4 @@
-# **Part II. 머신러닝 문제해결**
+# **Part III. 딥러닝 문제해결**
 
 
 
@@ -7,7 +7,7 @@
 
 
 
-# **Chapter 8. [경진대회] 안전 운전자 예측 경진대회**
+# **Chapter 9. [경진대회] 항공 사진 내 선인장 식별**
 ### **Predict Future Sales**
 ### Final project for "How to win a data science competition" Coursera course
 
